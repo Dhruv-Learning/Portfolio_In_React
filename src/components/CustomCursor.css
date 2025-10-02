@@ -1,0 +1,23 @@
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #AEC8CE;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out, width 0.15s ease, height 0.15s ease;
+  z-index: 9999;
+}
+
+/* Hover effect for buttons and links */
+button:hover ~ .custom-cursor,
+a:hover ~ .custom-cursor {
+  width: 35px;
+  height: 35px;
+  background-color: rgba(174, 200, 206, 0.3);
+  border-color: #fff;
+}

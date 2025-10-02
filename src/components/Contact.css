@@ -1,0 +1,115 @@
+.contact {
+  position: relative;
+  padding: 2em 6em;
+  margin-top: 8%;
+}
+
+.contact h3 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+/* Grid Layout */
+.contactMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  background: #161617;
+  border-radius: 30px;
+  padding: 2em;
+  outline: 1px solid #5f6161;
+}
+
+/* Left side: Contact info */
+.cLeft p {
+  margin: 1em 0;
+  font-size: 1.1em;
+}
+
+.cLeft i {
+  margin-right: 0.5em;
+  color: #d3dfe2;
+}
+
+.cLeft a {
+  text-decoration: none;
+  color: #aec8ce;
+}
+
+.cLeft a:hover {
+  border-bottom: 1px solid white;
+}
+
+/* Right side: Form */
+.cRight form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cRight label {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: #d3dfe2;
+  font-size: 1em;
+}
+
+.cRight input,
+.cRight textarea {
+  padding: 0.8em;
+  border-radius: 15px;
+  border: none;
+  outline: 1px solid #5f6161;
+  background: #222223;
+  color: white;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.cRight textarea {
+  height: 10em;
+  resize: vertical;
+  padding: 1em;
+}
+
+.cRight button {
+  padding: 0.6em 2.5em;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background: white;
+  color: black;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.cRight button:hover {
+  background: #aec8ce;
+  color: #000;
+}
+
+/* Responsive: Tablets */
+@media (max-width: 1024px) {
+  .contact {
+    padding: 2em 3em;
+  }
+  .contactMain {
+    grid-template-columns: 1fr;
+  }
+  .cRight button {
+    width: 50%;
+    align-self: center;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+  .contact {
+    padding: 1em 2em;
+    margin-top: 5%;
+  }
+  .cRight input,
+  .cRight textarea {
+    width: 100%;
+  }
+}

@@ -1,0 +1,134 @@
+/* Introduction Section.... */
+.introduction {
+  margin-top: 10%;
+  padding: 2em 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.introLeft h2 {
+  font-size: 3.5em;
+  margin-bottom: 0.3em;
+}
+
+.introLeft p {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  color: #aec8ce;
+}
+
+.intro-text {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+}
+
+.intro-buttons {
+  margin-top: 2em;
+}
+
+.intro-buttons button {
+  margin: 0.5em 0.5em 0 0;
+  padding: 0.7em 1.4em;
+  border-radius: 25px;
+  border: none;
+  font-size: 1.1em;
+  background: #232324;
+  outline: 1px solid #4a4b4b;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.intro-buttons button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.intro-buttons button:hover {
+  background: #3f3f3f;
+}
+
+.intro-buttons .view-projects {
+  background-color: white;
+}
+
+.intro-buttons .view-projects a {
+  color: black;
+}
+
+.intro-buttons .view-projects i {
+  color: black;
+  margin-left: 0.5em;
+}
+
+.introRight {
+  margin-top: 2em;
+}
+
+.rightContent {
+  border-radius: 20px;
+  background: #161617;
+  border: 1px solid rgb(88, 88, 88);
+  padding: 2em;
+}
+
+.rightContent:hover {
+  background: #232324;
+}
+
+.rightContent p {
+  margin-top: 1em;
+  color: #aec8ce;
+  font-size: 1.2em;
+}
+
+.rightContent p a {
+  text-decoration: none;
+  color: #aec8ce;
+}
+
+.rightContent p a:hover {
+  text-decoration: underline;
+}
+
+.rightContent i {
+  color: #d3dfe2;
+  margin-right: 0.5em;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .introduction {
+    flex-direction: column;
+    padding: 2em 2em;
+  }
+
+  .introLeft h2 {
+    font-size: 2.5em;
+  }
+
+  .introLeft p {
+    font-size: 1.2em;
+  }
+
+  .rightContent {
+    width: 100%;
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .introLeft h2 {
+    font-size: 2em;
+  }
+
+  .introLeft p {
+    font-size: 1em;
+  }
+
+  .intro-buttons button {
+    font-size: 0.9em;
+    padding: 0.5em 1em;
+  }
+}
