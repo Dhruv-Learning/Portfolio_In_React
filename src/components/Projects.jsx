@@ -18,7 +18,7 @@ function Projects() {
           <h4>Expense Tracker</h4>
           <p>Track daily expenses with charts and reports.</p>
           <div className="btn">
-            <button><a href="https://github.com/Dhruv-Learning">Live Demo</a></button>
+            <button><a href="https://expense-app-two-mocha.vercel.app/">Live Demo</a></button>
             <button><a href="https://github.com/Dhruv-Learning">GitHub</a></button>
           </div>
         </div>
