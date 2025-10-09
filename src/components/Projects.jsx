@@ -9,7 +9,7 @@ function Projects() {
           <h4>Portfolio Website</h4>
           <p>A personal portfolio website showcasing my skills and projects.</p>
           <div className="btn">
-            <button><a href="https://github.com/Dhruv-Learning">Live Demo</a></button>
+            <button><a href="portfolio-in-react-taupe.vercel.app">Live Demo</a></button>
             <button><a href="https://github.com/Dhruv-Learning">GitHub</a></button>
           </div>
         </div>
