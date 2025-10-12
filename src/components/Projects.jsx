@@ -25,7 +25,7 @@ function Projects() {
 
         <div className="pbox">
           <h4>Netflix Clone</h4>
-          <p>A fully responsive Netflix Clone built with HTML, CSS, and JavaScript that replicates the sleek design and feel of the original Netflix UI.</p>
+          <p>A fully responsive Netflix Clone built with HTML, CSS, and JavaScript   that replicates the sleek design and feel of the original Netflix UI.</p>
           <div className="btn">
             <button><a href="https://netflix-clone-1-smoky.vercel.app/">Live Demo</a></button>
             <button><a href="https://github.com/Dhruv-Learning">GitHub</a></button>
