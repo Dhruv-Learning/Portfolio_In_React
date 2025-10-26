@@ -1,9 +1,11 @@
 import React from "react";
 import "./Introduction.css"; // Import CSS for this component
+import AnimatedSection from "./AnimatedSection";
 
 const Introduction = () => {
   return (
-    <section className="introduction" id="home">
+    <AnimatedSection>
+      <section className="introduction" id="home">
       {/* Left Side */}
       <div className="introLeft">
         <h2>Dhruv Sharma</h2>
@@ -57,6 +59,7 @@ const Introduction = () => {
         </div>
       </div>
     </section>
+    </AnimatedSection>
   );
 };
 

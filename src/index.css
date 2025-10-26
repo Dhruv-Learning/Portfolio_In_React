@@ -10,6 +10,10 @@
 body {
     background: #0A0A0B;
 }
+section {
+  scroll-margin-top: 80px; /* prevents header overlap */
+}
+
 
 h3 {
     font-size: 2.3em;

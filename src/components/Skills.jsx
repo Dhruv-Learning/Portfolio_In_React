@@ -1,8 +1,10 @@
 import React from "react";
+import AnimatedSection from "./AnimatedSection";
 
 function Skills() {
   return (
-    <section className="Skills" id="skills">
+    <AnimatedSection>
+      <section className="Skills" id="skills">
       <h3>My Skills</h3>
       <div className="skillsMain">
         <div className="box">
@@ -23,6 +25,7 @@ function Skills() {
         </div>
       </div>
     </section>
+    </AnimatedSection>
   );
 }
 

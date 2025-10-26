@@ -1,9 +1,11 @@
 import React from "react";
 import "./Contact.css"; // We'll create separate CSS for this component
+import AnimatedSection from "./AnimatedSection";
 
 const Contact = () => {
   return (
-    <section className="contact">
+    <AnimatedSection>
+      <section className="contact">
       <h3>
         <i className="bi bi-envelope"></i> Contact
       </h3>
@@ -75,6 +77,8 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    </AnimatedSection>
+    
   );
 };
 

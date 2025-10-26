@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // icons for open/close
+import AnimatedSection from "./AnimatedSection";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="header">
+      <header className="header">
       <div className="logo">My Portfolio</div>
 
       {/* Desktop Menu */}

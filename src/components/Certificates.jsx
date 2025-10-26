@@ -1,8 +1,10 @@
 import React from 'react';
+import AnimatedSection from './AnimatedSection';
 
 const Certificates = () => {
   return (
-    <section className="certificate">
+    <AnimatedSection>
+      <section className="certificate">
       <h3>
         <i className="bi bi-award"></i> Certificates
       </h3>
@@ -40,6 +42,8 @@ const Certificates = () => {
         </div>
       </div>
     </section>
+    </AnimatedSection>
+    
   );
 };
 

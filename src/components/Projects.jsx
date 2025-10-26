@@ -1,8 +1,10 @@
 import React from "react";
+import AnimatedSection from "./AnimatedSection";
 
 function Projects() {
   return (
-    <section className="projects" id="projects">
+  <AnimatedSection>
+      <section className="projects" id="projects">
       <h3>My Projects</h3>
       <div className="mainProject">
         <div className="pbox">
@@ -33,6 +35,7 @@ function Projects() {
         </div>
       </div>
     </section>
+  </AnimatedSection>
   );
 }
 
