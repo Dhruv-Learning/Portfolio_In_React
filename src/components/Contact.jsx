@@ -48,7 +48,7 @@ const Contact = () => {
 
         {/* Right Side: Contact Form */}
         <div className="cRight">
-          <form>
+          <form onSubmit={(e) => alert("Form Submitted!")}>
             <label htmlFor="name">Your Name</label>
             <input
               type="text"
