@@ -489,6 +489,13 @@ header .logo {
   transform: translateY(-6px);
   box-shadow: 0 6px 20px rgba(109, 213, 237, 0.3);
 }
+.pbox:nth-child(1):hover {
+  box-shadow: 0 0 15px rgba(255, 195, 113, 0.6);
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
+
 
 /* 🧩 Titles & Text */
 .pbox h4 {
