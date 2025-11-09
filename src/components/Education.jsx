@@ -8,10 +8,10 @@ function Education() {
       <h3>Education</h3>
       <div className="edu">
         <div className="bca">
-          <p><strong>BCA</strong> - CCSU University</p>
+          <p><strong>BCA</strong> - CCS University</p>
           <p>2022 - 2025</p>
         </div>
-        <p>Currently pursuing Bachelor of Computer Applications with a focus on web development and software engineering.</p>
+        <p>Currently pursuing a Full Stack Development Course from Hanumant Technology Pvt. Ltd. </p>
       </div>
     </section>
     </AnimatedSection>

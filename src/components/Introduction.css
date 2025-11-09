@@ -1,126 +1,159 @@
-/* Introduction Section.... */
+/* 🌟 Introduction Section */
 .introduction {
-  margin-top: 10%;
-  padding: 2em 5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4em 8%;
+  margin-top: 8%;
+  transition: all 0.3s ease;
+}
+
+/* ✨ Left Content */
+.introLeft {
+  flex: 1;
+  min-width: 300px;
 }
 
 .introLeft h2 {
-  font-size: 3.5em;
+  font-size: clamp(2rem, 5vw, 3.2rem);
   margin-bottom: 0.3em;
+  color: #fff;
+  font-weight: 700;
 }
 
 .introLeft p {
-  font-size: 1.5em;
-  margin-top: 0.5em;
+  font-size: clamp(1em, 2.2vw, 1.3em);
   color: #aec8ce;
+  margin-top: 0.5em;
 }
 
 .intro-text {
-  font-size: 1.2em;
-  margin-top: 0.5em;
+  font-size: 1.1em;
+  margin-top: 0.8em;
+  color: #d6d6d6;
 }
 
+/* 🔘 Buttons */
 .intro-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
   margin-top: 2em;
 }
 
 .intro-buttons button {
-  margin: 0.5em 0.5em 0 0;
-  padding: 0.7em 1.4em;
-  border-radius: 25px;
-  border: none;
-  font-size: 1.1em;
   background: #232324;
-  outline: 1px solid #4a4b4b;
+  border: 1px solid #4a4b4b;
+  border-radius: 25px;
+  padding: 0.7em 1.4em;
+  color: #fff;
+  font-size: 1em;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.intro-buttons button a {
-  text-decoration: none;
-  color: inherit;
+  transition: all 0.3s ease;
 }
 
 .intro-buttons button:hover {
   background: #3f3f3f;
+  transform: scale(1.05);
 }
 
-.intro-buttons .view-projects {
-  background-color: white;
+.intro-buttons a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.intro-buttons .view-projects a {
-  color: black;
+.view-projects {
+  background: #fff !important;
+  color: #000 !important;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-.intro-buttons .view-projects i {
-  color: black;
-  margin-left: 0.5em;
+.view-projects:hover {
+  background: #aec8ce !important;
+  color: #000 !important;
 }
 
+/* 📍 Right Content Box */
 .introRight {
-  margin-top: 2em;
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
 }
 
 .rightContent {
-  border-radius: 20px;
   background: #161617;
-  border: 1px solid rgb(88, 88, 88);
+  border: 1px solid #585858;
+  border-radius: 20px;
   padding: 2em;
+  width: 100%;
+  max-width: 380px;
+  text-align: left;
+  transition: all 0.3s ease;
 }
 
 .rightContent:hover {
-  background: #232324;
+  background: #1f1f20;
+  transform: scale(1.02);
 }
 
 .rightContent p {
-  margin-top: 1em;
   color: #aec8ce;
-  font-size: 1.2em;
+  font-size: 1.05em;
+  margin: 1em 0;
+  line-height: 1.5em;
+  display: flex;
+  align-items: center;
 }
 
-.rightContent p a {
+.rightContent a {
+  color: #aec8ce;
   text-decoration: none;
-  color: #aec8ce;
+  word-break: break-all;
 }
 
-.rightContent p a:hover {
+.rightContent a:hover {
   text-decoration: underline;
 }
 
 .rightContent i {
+  margin-right: 10px;
   color: #d3dfe2;
-  margin-right: 0.5em;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
+/* 🧭 Responsiveness */
+@media (max-width: 992px) {
   .introduction {
     flex-direction: column;
-    padding: 2em 2em;
+    text-align: center;
+    padding: 3em 5%;
   }
 
-  .introLeft h2 {
-    font-size: 2.5em;
+  .introLeft {
+    text-align: center;
   }
 
-  .introLeft p {
-    font-size: 1.2em;
+  .intro-buttons {
+    justify-content: center;
   }
 
   .rightContent {
-    width: 100%;
     margin-top: 2em;
+    text-align: center;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
+  .introduction {
+    padding: 2em 1.5em;
+    margin-top: 15%;
+  }
+
   .introLeft h2 {
-    font-size: 2em;
+    font-size: 1.9rem;
   }
 
   .introLeft p {
@@ -129,6 +162,15 @@
 
   .intro-buttons button {
     font-size: 0.9em;
-    padding: 0.5em 1em;
+    padding: 0.5em 1.1em;
+  }
+
+  .rightContent {
+    padding: 1.5em;
+    width: 90%;
+  }
+
+  .rightContent p {
+    font-size: 0.95em;
   }
 }

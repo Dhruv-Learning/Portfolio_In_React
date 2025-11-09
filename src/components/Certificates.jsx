@@ -4,7 +4,7 @@ import AnimatedSection from './AnimatedSection';
 const Certificates = () => {
   return (
     <AnimatedSection>
-      <section className="certificate">
+      <section className="certificate" id="certificates">
       <h3>
         <i className="bi bi-award"></i> Certificates
       </h3>
