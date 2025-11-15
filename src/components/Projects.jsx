@@ -17,7 +17,7 @@ function Projects() {
             <div className="btn">
               <button>
                 <a
-                  href="https://sharebite-app.vercel.app/"
+                  href="https://share-bite-tau.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
