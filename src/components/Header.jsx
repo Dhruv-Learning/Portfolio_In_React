@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // icons for open/close
+import {GalleryThumbnails, Code, Menu, X } from "lucide-react"; // icons for open/close
 import AnimatedSection from "./AnimatedSection";
 
 function Header() {
@@ -7,7 +7,7 @@ function Header() {
 
   return (
       <header className="header">
-      <div className="logo">My Portfolio</div>
+      <div className="logo"> <GalleryThumbnails size={15} /> My Portfolio</div>
 
       {/* Desktop Menu */}
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>

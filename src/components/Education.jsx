@@ -1,11 +1,12 @@
 import React from "react";
 import AnimatedSection from "./AnimatedSection";
+import { BookOpenText } from "lucide-react"; // icon for education
 
 function Education() {
   return (
     <AnimatedSection>
       <section className="education" id="education">
-      <h3>Education</h3>
+      <h3><BookOpenText  size={30}/> Education</h3>
       <div className="edu">
         <div className="bca">
           <p><strong>BCA</strong> - CCS University</p>

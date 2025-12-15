@@ -37,14 +37,17 @@ function Projects() {
             </div>
           </div>
 
+
           <div className="pbox">
-            <h4>Portfolio Website</h4>
+            <h4>Web_Builder_App</h4>
             <p>
-              A personal portfolio website showcasing my skills and projects.
+             AI Website Generator — Build complete, responsive websites instantly from prompts with live preview, themes, templates, and exportable code.
             </p>
             <div className="btn">
               <button>
-                <a href="portfolio-in-react-taupe.vercel.app">Live Demo</a>
+                <a href="https://web-builder-xi.vercel.app/">
+                  Live Demo
+                </a>
               </button>
               <button>
                 <a href="https://github.com/Dhruv-Learning">GitHub</a>
@@ -67,24 +70,8 @@ function Projects() {
             </div>
           </div>
 
-          <div className="pbox">
-            <h4>Netflix Clone</h4>
-            <p>
-              A fully responsive Netflix Clone built with HTML, CSS, and
-              JavaScript that replicates the sleek design and feel of the
-              original Netflix UI.
-            </p>
-            <div className="btn">
-              <button>
-                <a href="https://netflix-clone-1-smoky.vercel.app/">
-                  Live Demo
-                </a>
-              </button>
-              <button>
-                <a href="https://github.com/Dhruv-Learning">GitHub</a>
-              </button>
-            </div>
-          </div>
+          
+
         </div>
       </section>
     </AnimatedSection>

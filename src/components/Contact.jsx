@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import AnimatedSection from "./AnimatedSection";
+import {Send} from 'lucide-react'
 
 const Contact = () => {
   const form = useRef();
@@ -12,7 +13,7 @@ const Contact = () => {
     emailjs
       .sendForm(
         "service_gn8lr4j", // 🔹 Replace this
-        "template_nfk77rt", // 🔹 Replace this
+        "template_pwjj1jw", // 🔹 Replace this
         form.current,
         "63CdV87FbMxqxWH-3" // 🔹 Replace this
       )
@@ -33,7 +34,7 @@ const Contact = () => {
     <AnimatedSection>
       <section className="contact" id="contact">
         <h3>
-          <i className="bi bi-envelope"></i> Contact
+          <Send size={30} /> Contact
         </h3>
 
         <div className="contactMain">
@@ -41,7 +42,7 @@ const Contact = () => {
           <div className="cLeft">
             <p>
               <i className="bi bi-geo-alt"></i> Bulandshahr, Uttar Pradesh, India
-            </p>
+            </p> 
             <p>
               <i className="bi bi-envelope"></i>{" "}
               <a href="mailto:ks8302768@gmail.com">ks8302768@gmail.com</a>
@@ -76,12 +77,12 @@ const Contact = () => {
           <div className="cRight">
             <form ref={form} onSubmit={sendEmail}>
               <label htmlFor="name">Your Name</label>
-              <input type="text" name="from_name" placeholder="Enter your name" required />
+              <input type="text" name="user_name" placeholder="Enter your name" required />
 
               <label htmlFor="email">Your Email</label>
-              <input type="email" name="from_email" placeholder="abc@gmail.com" required />
+              <input type="email" name="user_email" placeholder="abc@gmail.com" required />
 
-              <label htmlFor="msg">Message</label>
+              <label htmlFor="message">Message</label>
               <textarea name="message" placeholder="Say hello!" required></textarea>
 
               <button type="submit">Send Message</button>
